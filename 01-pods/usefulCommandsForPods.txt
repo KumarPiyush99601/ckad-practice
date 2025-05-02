@@ -1,0 +1,14 @@
+Below are some useful commands for pods:
+
+1. k run <name> --image=<imagename>
+2. k run <name> --image=<imagename> --dry-run=client -o yaml
+3. k get pods
+4. k describe pod <podname>
+5. k delete pod <podname>
+6. k edit pod <podname>
+Note: The above command should only be used to edit the following properties in a pod
+    > spec.containers.image
+    > spec.initContainers[*].image
+    > spec.activeDeadlineSeconds
+    > spec.tolerations
+    > spec.terminationGracePeriodSeconds

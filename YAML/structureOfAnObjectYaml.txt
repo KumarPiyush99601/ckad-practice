@@ -1,0 +1,13 @@
+Inorder to create various objects in K8 it is very essential to understand the concept of YAML. YAML stands for Yet Another Markup Language and it relies heavily on intendation. 
+
+Any object in K8 has the following strucutre in the YAML file
+
+apiVersion: v1 ---> This defines the version of the kubernetes API which is being used to create the object.
+
+kind: Pod      ---> This defines the kind of object being created. 
+
+metadata:      ---> This defines the unique information related to the object being created.
+  name:        ---> This defines the name of the object.
+  label:       ---> This defines the unique value which is associated with the pod. This is generally used to classify the pods in categories.
+
+spec:          ---> This defines the specifications of the object.
