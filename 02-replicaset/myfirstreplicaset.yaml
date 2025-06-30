@@ -1,0 +1,18 @@
+apiVersion: apps/v1               # Version of ReplicaSet in K8
+kind: ReplicaSet                  # Type of Object in K8
+metadata:                         # Details about the replicaset
+  name: myfirstreplicaset         # Name of the ReplicaSet
+spec:                             # Specifications for the replicaset
+  replicas: 5                     # No of desired replicas
+  selector:                       # Used to identify the pods tagged to the replicaset
+    matchLabels:
+      name: myfirstreplicaset
+  template:                       # template for the pods     
+    metadata:
+      labels:                     
+        name: myfirstreplicaset 
+    spec:
+      containers:
+      - image: nginx
+        name: myfirstreplicaset
+        resources: {}

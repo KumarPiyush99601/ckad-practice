@@ -1,0 +1,3 @@
+k create deployment <deploy_name> --image=<imageName> --replicas=<#>
+k scale deployment <deploy_name> --replicas=<#>
+

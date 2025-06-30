@@ -1,0 +1,7 @@
+A deployment manages a set of Pods to run an application workload, usually one that doesn't maintain set.
+
+A deployment creates a replicaSet to manage the pods, the labels defined in the deployment is used as the name of the replicaset followed by a hash map and replicaset generates a name for the pod with the name of the replicaset followed by a hashmap.
+
+The labels of a pod should not be modified.
+
+Rollover deployments are performed i.e. if a deployment is in progress for 5 replcias out of which 3 of them have been created then the deployment config is updated then K8 will not complete the rollout of 5 replias, instead it will start killing the exisiting 3 replicas and then will create new 5 replicas.

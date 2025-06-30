@@ -1,0 +1,4 @@
+ReplicaSet is an object in K8 which ensures that the desired number of pods are always running.
+
+It ensures the above by using labels and selectors, in Replica Set YAML file label is defined for the pods which identifies the pods uniquely out of all the available pods in the node.Selector is used to uniquely select the pods by the replicaset with the desired lables and manage them.
+

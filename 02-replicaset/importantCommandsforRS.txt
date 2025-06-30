@@ -1,0 +1,4 @@
+1. k create -f <nameof replicasetfile.yml>
+2. k scale rs <name> --replicas=5
+3. k edit rs <>
+Note: After performing the edit command on an exisitng replicaset, the pods needs to be deleted for the new values to be reflected.
