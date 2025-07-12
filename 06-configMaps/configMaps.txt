@@ -1,0 +1,3 @@
+ConfigMap is an API object which is used to store non-confidential data in key value pairs. Pods can consume configs as env variables, configuration files in volumes and command line arguments.
+
+kubectl create configmap <> --from-literal=<key>=<value>  --from-literal=<key2>=<value2> 

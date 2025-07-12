@@ -1,0 +1,1 @@
+A namespace in K8 provides mechanisam to isolate group of resources within a single cluster.

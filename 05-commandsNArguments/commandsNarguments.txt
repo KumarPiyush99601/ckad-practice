@@ -1,0 +1,7 @@
+Commands are used in yaml file to specify the command to be executed on the docker container and Arguments are specified to pass the arguments for the command.
+
+In case there is a command and argument already specified in the dockerfile and a different command and argument is specified in the pod yaml file. The values in pod yaml will overwrite the values in dockerfile.
+
+kubectl run <> --image <> --command <> # Syntax to specify commands and arguments.
+
+kubectl run <> --image <> -- <> <> #Syntax to specify only arguments.
