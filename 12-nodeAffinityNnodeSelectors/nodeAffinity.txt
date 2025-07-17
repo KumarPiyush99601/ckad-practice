@@ -1,0 +1,15 @@
+Node Affinity aalows you to constrain which type of nodes you can schedule on based on node labels. There are two types of Node Affinity:
+
+1. requiredDuringSchedulingIgnoredDuringExecution: This means that the scheduler cannot schedule the pod unless the condition is met.
+
+2. preferredDuringSchedulingIgnoredDuringExecution: This means that the scheduler will schedule the pod even if the condition is not met.
+
+Following are the logical operators which can be used in the affinity rules:
+
+> In
+
+> NotIn
+
+> Exists
+
+> DoesNotExists

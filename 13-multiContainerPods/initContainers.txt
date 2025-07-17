@@ -1,0 +1,5 @@
+Init Containers are just like regular containres within a pod except the init container must always complete for the other containres to start and more than one init containers in a pod are executed sequentially.
+
+In case of failure, if the init container whithin the pod has described restartPolicy as Always, kubelet will restart the container each time untill it succeeds and the state of pod will be pending, but if the initcontainer has restartPolicy described as Never and the initContainer fails to start, the pod will be marked as failed.
+
+Init Containers do not support lifecycle, livenessProbe, readinessProbe, or startupProb.

@@ -1,0 +1,13 @@
+Taints are applied on nodes and they ensure that pods only with the required tolerations are scheduled on the node.
+
+Tolerations are applied on the pod, it allows the scheduler to schedule pods with matching taints.
+
+Taints and tolerations work together to ensure that pods are not scheduled into inappropriate nodes.
+
+Command to add taint
+
+kubectl taint node <nodename> <value>=<key>:<Effect>
+
+Command to remove taint
+
+kubectl taint node <nodename> <value>=<key>:<Effect>-

@@ -1,0 +1,3 @@
+Ephemeral Containers are created to do specific functions within a pod but many fields are incompatible. 
+
+Ephemeral containers are created using a special ephemeralcontainers handler in the API  than by adding it directly to specification section of the pod, hence it is not possible to add an ephemeral container using kubectl edit.

@@ -1,0 +1,3 @@
+SideCar containers are the secondary containers that run along with the main application container within the same Pod. SideCar containers remain running after the pod startup.
+
+SideCar containers has the restartPolicy specified as Always.

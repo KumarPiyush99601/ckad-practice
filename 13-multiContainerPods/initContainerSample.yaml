@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: inicon
+  name: inicon
+spec:
+  initContainers:
+  - image: busybox
+    name: inic
+    command: ["sleep", "10"]
+  containers:
+  - image: busybox
+    name: busybox
+    command: ["sleep"]
+    args: ["100"]
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}

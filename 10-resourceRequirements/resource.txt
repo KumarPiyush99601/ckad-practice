@@ -1,0 +1,7 @@
+Limit ranges are specified to set the resource usage limits for each kind of resource in a namespace.
+
+Limits are speciifed using request and limit field, request specifies the amount of resource the container needs to run and limit specifies the amount of resource to which the request can be exceeded.
+
+The overall memory and CPU requests can also be specified for a namespace in a ResourceQuota object. 
+
+

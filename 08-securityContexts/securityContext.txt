@@ -1,0 +1,7 @@
+Security context defines prviledges and access Control Settings for a pod or Container.
+
+The security context specified at the container level overwrites the security context at pod level.
+
+
+
+

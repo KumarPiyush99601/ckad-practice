@@ -1,0 +1,17 @@
+Node Selector is used to ensure that a pod is scheduled on a specific node, this is done by assigning a label to the node and then using this label in the pod yaml file.
+
+Ex: In the below example pod nodeaffinitypod will be assigned to the node which has label set to large, if it doesnot finds that the pod will be inpending state.
+
+apiVersion: v1
+kind: pod
+metadata:
+  name: nodeaffinitypod
+  labels:
+    env: dev
+spec:
+  containers:
+  - name: nodeaffinitypod
+    image: busybox
+  nodeSelector:
+    size: large
+    
