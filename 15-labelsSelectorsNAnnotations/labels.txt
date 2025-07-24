@@ -1,0 +1,7 @@
+Labels are used to specify identifying objects relevant to the user. Each object can have a set of key value defined to it, Each Key must be unique to the object.
+
+CommandLine to update a label.
+
+kubectl label pods -l app=nginx tier=fe
+
+use -L to list the bales in the get statement.

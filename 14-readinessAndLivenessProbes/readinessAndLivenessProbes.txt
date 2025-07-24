@@ -1,0 +1,16 @@
+The kubelet uses liveness Probe to know when to restart the container and it uses the readiness Probe to know when the container is ready to start accepting the traffic.
+
+periodSeconds field specifies when the kubelet should perform a liveness probe, ex: every 1 , 2 or 3 seconds.
+
+initialDelaySeconds specifies the kubelet how many seconds it should wait before performing the first probe. ex: 1,2 or 3 second.
+
+Types of Probe:
+
+1. Liveness Command
+
+2. HTTP Request
+
+3. TCP Liveness Probe
+
+
+

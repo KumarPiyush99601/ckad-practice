@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: deployment1
+  name: deployment1
+spec:
+  replicas: 50
+  selector:
+    matchLabels:
+      app: deployment1
+  strategy:
+     type: RollingUpdate
+     rollingUpdate:
+       maxSurge: 25
+       maxUnavailable: 25
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: deployment1
+    spec:
+      containers:
+      - image: busybox
+        name: busybox
+        args: 
+          - /bin/sh 
+          - -c 
+          - sleep 100
+        resources: {}
+status: {}

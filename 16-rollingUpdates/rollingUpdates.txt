@@ -1,0 +1,13 @@
+Rolling updates allow a deployment update to take palce with zero downtime by incrementally updating Pod instances with new ones.
+
+You can specify the % or whole no value for pods which can be brought down during the update in the field spec.strategy.rollingUpdate.maxUnavailable.
+
+You can specify the % or whole no value for total number of pods which can be can be created during the rollout in the filed .spec.strategy.rollingUpdate.maxSurge.
+
+k rollout status deployment <deployment_name>
+
+k rollout history deployment <deployment_name>
+
+k rollout undo deployment <deployment_name>
+
+k set image deployment <deployment_name> <container_name>=<new_image_name>

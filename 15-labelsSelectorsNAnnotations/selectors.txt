@@ -1,0 +1,1 @@
+Selector is used to identify a group of objects with the same label.

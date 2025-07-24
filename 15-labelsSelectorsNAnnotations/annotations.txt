@@ -1,0 +1,1 @@
+Annotations can be used to attach arbitrary non-identifying metadata to objects. Annotations like labels are key/value maps.
