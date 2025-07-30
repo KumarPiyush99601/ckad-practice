@@ -1,0 +1,3 @@
+Blue Green startegy of deployment is where two sets of deployments are created, tests are run on the new version and once the tests are passed the traffic is passed to new version from old version.
+
+Using the kubernetes objects this is done by using two different labels in the deployments and switching the labels when the version ahs to be swtiched.

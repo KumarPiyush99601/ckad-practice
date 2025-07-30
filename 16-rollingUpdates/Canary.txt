@@ -1,0 +1,1 @@
+Canary deployment is where two versions are created and  a certain percentage of traffic is routed to the new version. This is done by controlling the number of pods in the new and old deployments.

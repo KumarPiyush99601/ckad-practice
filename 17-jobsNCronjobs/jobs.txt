@@ -1,0 +1,7 @@
+A job creates one or more pods and will contine to retry execution of the pods untill specified number of them exists succesfully.Job tracks succesfull number of completion for the pods and when a specified number of completions are reached the job is terminated.
+
+
+Job is generally used to perform an activity which need not run all the time and is required to be done once. 
+
+In a job a RestartPolicy of OnFailure or Never is only allowed.
+

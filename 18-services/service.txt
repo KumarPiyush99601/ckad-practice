@@ -1,0 +1,7 @@
+A Service is a method for exposing a network application that is running as one or more Pods in your cluster.
+
+There are three types of services:
+
+1. NodePort
+2. CLusterIp
+3. Load Balancer
