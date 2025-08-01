@@ -1,0 +1,9 @@
+Network Policies allow to specify rules for traffic flow between Pods and the outsode world. It is an application-centric way which specifies how to communicate with various network entities. It applies to a connection with a pod on one or both ends.
+
+The entities are identifed through three identifiers:
+
+1. Other pods that are allowed.
+2. Namespaces that are allowed.
+3. IP blocks.
+
+By default, if no policies exist in a namespace, then all ingress and egress traffic is allowed to and from pods in that namespace.
