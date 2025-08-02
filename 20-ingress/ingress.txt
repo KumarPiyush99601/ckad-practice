@@ -1,0 +1,13 @@
+Ingress concept lets you map traffic to different backends based on rules you define via the Kubernetes API.
+
+Ingress can have the following path types:
+
+1. ImplementationSpecific
+2. Exact
+3. Prefix
+
+Types of Ingress:
+
+1. Ingress backed by a single service
+2. Simple Fanout, where a config routes traffic from a single IP address to more than one Service, based on the HTTP URI being requested.
+3. Name based Virtual hosting, this supports routing HTTP traffic to multiple host names at the same IP address. 
