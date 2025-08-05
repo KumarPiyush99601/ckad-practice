@@ -1,0 +1,14 @@
+A Persistent Volume is a piece of storage in the cluster that has been provisioned by an adminstrator or dynamically provisioned.
+
+A Persistent Volume Claim is a request for a storgae by a user.
+
+A PV has Retain, Recycle or Delete reclaim policy.
+
+Access Modes:
+
+ReadWriteOnce(RWO): This can allow multiple pods to access that volume when the pods are running on the same node.
+ReadOnlyMany(ROX): THe volume can be mounted as read-nly by many nodes.
+ReadWriteMany(RWX): The volume can be mounted as read-write by many nodes.
+ReadWriteOncePod(RWOP): The volume can be mounted as read-write by a single Pod.
+
+Claims use the same Access Modes, Volume Modes as a PV in a PVC. 
