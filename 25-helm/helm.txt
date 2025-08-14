@@ -1,0 +1,29 @@
+Helm helps to manage Kubernetes applications. Helm Charts help to define, install, and upgrade complex Kubernetes application.
+
+A Chart is a Helm package. It contains all of the resource definitions necessary to run an application, tool, or service inside of a Kubernetes cluster. 
+
+A Repository is the place where charts can be collected and shared.
+
+A Release is an instance of a chart running in a Kubernetes cluster. 
+
+Useful commands:
+
+helm install <releasename> <chartname/chartrepo>
+
+helm list ## Command to see what releases have been deployed.
+
+helm uninstall <releasename>
+
+helm search ## Command to search the charts added to the repo or the ones present at hub
+
+helm upgrade -f panda.yaml happy-panda bitnami/wordpress ## Command to upgrade one yaml file in the helm chart
+
+helm get values ## To check if the values updated in the above set got reflected
+
+helm uninstall <release_name> ## Uninstall a release
+
+helm repo list
+
+
+
+
